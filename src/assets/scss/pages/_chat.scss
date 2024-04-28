@@ -649,24 +649,3 @@
         }
     }
 }
-
-// contact list
-.contact-list {
-    li {
-        cursor: pointer;
-        padding: 8px 24px;
-        transition: all 0.4s;
-        color: var(--#{$prefix}body-color);
-        font-family: $font-family-secondary;
-        font-weight: $font-weight-medium;
-        font-size: $font-size-base;
-    }
-    & .active {
-        background-color: $chat-secondary-bg;
-        color: $chat-secondary-color;
-        .badge {
-            background-color: rgba(var(--#{$prefix}success-rgb), 0.15) !important;
-            color: $success !important;
-        }
-    }
-}

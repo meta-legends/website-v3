@@ -28,10 +28,10 @@
 }
 
 .swiper-pagination-bullet{
-    width: 22px !important;
-    height: 5px !important;
-    background-color: $white !important;
-    border-radius: 50px !important;
+    width: 22px;
+    height: 5px;
+    background-color: $white;
+    border-radius: 50px;
     box-shadow: $element-shadow;
     .swiper-pagination-bullet-active{
         opacity: 1;
@@ -40,9 +40,9 @@
 
 .dynamic-pagination{
     .swiper-pagination-bullet {
-        width: 8px !important;
-        height: 8px !important;
-        background-color: $white !important;
+        width: 8px;
+        height: 8px;
+        background-color: $white;
         opacity: 0.5;
         transition: all 0.5s ease;
         &.swiper-pagination-bullet-active{
@@ -97,11 +97,11 @@
 
 .swiper-pagination-dark {
     .swiper-pagination-bullet {
-        background-color: $secondary !important;
+        background-color: $secondary;
     }
     .dynamic-pagination{
         .swiper-pagination-bullet { 
-            background-color: $secondary !important;
+            background-color: $secondary;
         }
     }
     &.pagination-custom{

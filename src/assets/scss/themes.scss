@@ -1,7 +1,7 @@
 @import "../scss/icons.scss";
-@import "../scss/config/default/bootstrap.scss";
-@import "../scss/config/default/app.scss";
-@import "../scss/config/default/custom.scss";
+@import "../scss/config/galaxy/bootstrap.scss";
+@import "../scss/config/galaxy/app.scss";
+@import "../scss/config/galaxy/custom.scss";
 @import"./shepherd.css";
 @import "./mermaid.min.css";
 
@@ -39,7 +39,7 @@ body {
 }
 
 .noUi-handle {
-  background: #0ab39c !important;
+  background: #8c68cd !important;
   border: 2px solid var(--vz-card-bg) !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -165,6 +165,7 @@ $value in $theme-colors {
 }
 
 // Emoji Picker
+
 aside.EmojiPickerReact.epr-main {
   position: absolute !important;
   bottom: 0;
@@ -177,10 +178,9 @@ aside.EmojiPickerReact.epr-main {
   left: unset !important;
 }
 
-
 .Toastify {
   .Toastify__toast {
-    min-height: 43px;
+    height: 50px;
   }
 
   .Toastify__close-button {
@@ -226,69 +226,90 @@ aside.EmojiPickerReact.epr-main {
   border-color: var(--#{$prefix}border-color) !important;
 }
 
-//react select
-.css-b62m3t-container {
+.css-b62m3t-container{
   .css-13cymwt-control {
-    background-color: var(--#{$prefix}secondary-bg);
-    color: var(--#{$prefix}body-color);
-    border-color: var(--#{$prefix}border-color);
-
-    &:hover,
-    &:focus {
-      border-color: var(--#{$prefix}primary);
-    }
-
-    .css-1p3m7a8-multiValue {
-      color: var(--#{$prefix}white);
-      background-color: var(--#{$prefix}primary);
-
-      .css-wsp0cs-MultiValueGeneric {
-        color: var(--#{$prefix}white);
+      background-color: var(--#{$prefix}secondary-bg);
+      color: var(--#{$prefix}body-color);
+      border-color: var(--#{$prefix}border-color);
+      &:hover, &:focus {
+          border-color: var(--#{$prefix}primary);
       }
+      
+      .css-1p3m7a8-multiValue {
+          color: var(--#{$prefix}white);
+          background-color: var(--#{$prefix}primary);
+          .css-wsp0cs-MultiValueGeneric{
+              color: var(--#{$prefix}white);
+          }
 
-      .css-1u9des2-indicatorSeparator {
-        border-color: var(--#{$prefix}border-color);
+          .css-1u9des2-indicatorSeparator{
+              border-color: var(--#{$prefix}border-color);
+          }
       }
-    }
   }
 
   :is(.css-qbdosj-Input, .css-1dimb5e-singleValue) {
-    color: var(--#{$prefix}body-color);
+      color: var(--#{$prefix}body-color);
   }
 
-  .css-t3ipsp-control {
-    background-color: var(--#{$prefix}secondary-bg);
-    color: var(--#{$prefix}body-color);
-    border-color: var(--#{$prefix}border-color);
+  .css-t3ipsp-control{
+      background-color: var(--#{$prefix}secondary-bg);
+      color: var(--#{$prefix}body-color);
+      border-color: var(--#{$prefix}border-color);
 
-    .css-1p3m7a8-multiValue {
-      color: var(--#{$prefix}white);
-      background-color: var(--#{$prefix}primary);
+      .css-1p3m7a8-multiValue {
+          color: var(--#{$prefix}white);
+          background-color: var(--#{$prefix}primary);
+          .css-wsp0cs-MultiValueGeneric{
+              color: var(--#{$prefix}white);
+          }
 
-      .css-wsp0cs-MultiValueGeneric {
-        color: var(--#{$prefix}white);
+          .css-1u9des2-indicatorSeparator{
+              border-color: var(--#{$prefix}border-color);
+          }
       }
-
-      .css-1u9des2-indicatorSeparator {
-        border-color: var(--#{$prefix}border-color);
-      }
-    }
   }
 
-  .css-1nmdiq5-menu {
-    background-color: var(--#{$prefix}secondary-bg);
-    color: var(--#{$prefix}body-color);
-    border-color: var(--#{$prefix}border-color);
-
-    .css-d7l1ni-option {
-      color: $white;
-      background-color: var(--#{$prefix}primary);
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: var(--#{$prefix}primary);
+  .css-1nmdiq5-menu{
+      background-color: var(--#{$prefix}secondary-bg);
+      color: var(--#{$prefix}body-color);
+      border-color: var(--#{$prefix}border-color);
+      .css-d7l1ni-option {
+          color: var(--#{$prefix}body-color);
+          background-color: var(--#{$prefix}light);
+          &:hover, &:active, &:focus {
+              background-color: var(--#{$prefix}light);
+          }
       }
-    }
   }
 }
+
+.form-select .form-control option {
+  background-color: var(--vz-input-bg-custom) !important;
+}
+
+//-------------------------
+
+[data-bs-theme="dark"]{
+  .form-select, .filepond--drop-label{
+    background-color: #061e39;
+    border-color: #061e39;
+  } 
+
+  .form-control{
+    background-color: #061e39;
+  }
+  
+}
+
+
+/* Change the white to any color */
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active {
+//   -webkit-box-shadow: 0 0 0 30px var(--#{$prefix}input-bg) inset !important;
+//   background-color: var(--#{$prefix}input-bg) !important;
+//   color: var(--#{$prefix}body-color) !important;
+//   -webkit-text-fill-color: var(--#{$prefix}body-color) !important;
+// }

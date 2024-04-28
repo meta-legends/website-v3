@@ -184,8 +184,8 @@
     border-radius: 5px 5px 0px 0px;
 
     .flatpickr-month {
-        background: transparent !important;
-        color: rgba($white, 0.9) !important;
+        background: transparent;
+        color: rgba($white, 0.9);
         fill: rgba($white, 0.9);
         height: 34px;
         line-height: 1;
@@ -435,7 +435,7 @@
 
     .flatpickr-monthDropdown-months {
         appearance: menulist;
-        background: transparent !important;
+        background: transparent;
         border: none;
         border-radius: 0;
         box-sizing: border-box;
@@ -463,7 +463,7 @@
         }
 
         .flatpickr-monthDropdown-month {
-            background-color: transparent !important;
+            background-color: transparent;
             outline: none;
             padding: 0;
             color: rgba($black, 0.8);

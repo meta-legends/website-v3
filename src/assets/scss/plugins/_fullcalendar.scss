@@ -119,6 +119,10 @@
         border: 0;
     }
 
+    .fc-scrollgrid{
+        border: 0;
+    }
+
     .fc-scrollgrid-section-liquid>td{
         border-top: 0;
     }
@@ -167,8 +171,8 @@
 }
 
 .fc-button {
-    background: var(--#{$prefix}card-bg-custom);
-    border-color: $border-color;
+    background: var(--#{$prefix}secondary-bg);
+    border-color: var(--#{$prefix}border-color);
     color: $gray-700;
     text-transform: capitalize;
     box-shadow: none;
@@ -256,12 +260,12 @@
     }
 }
 
+
 .fc-prev-button,
 .fc-next-button {
     position: relative;
     height: 37.5px;
     width: 37.5px;
-
     &::before {
         position: absolute;
         font-family: remixicon !important;
@@ -275,13 +279,11 @@
         justify-content: center;
     }
 }
-
 .fc-prev-button {
     &::before {
         content: "\ea64";
     }
 }
-
 .fc-next-button {
     &::before {
         content: "\ea6e";
@@ -291,7 +293,7 @@
 .fc-toolbar-chunk {
     .btn-group {
         box-shadow: $element-shadow;
-        .btn {
+        .btn{
             color: $secondary;
             background-color: rgba($secondary, 0.15);
             border: none;
@@ -311,14 +313,17 @@
     }
 }
 
-.fc {
-    .fc-button-primary:not(:disabled).fc-button-active, 
-    .fc-button-primary:not(:disabled):active{
-        background-color: $secondary !important;
-        border-color: $secondary !important;
-        color: $white !important;
-    }
-}
+// .fc {
+//     .fc-button-primary:not(:disabled).fc-button-active, 
+//     .fc-button-primary:not(:disabled):active{
+//         background-color: $secondary !important;
+//         border-color: $secondary !important;
+//         color: $white !important;
+//     }
+//     .fc-button-primary {
+//         text-transform: capitalize;
+//     }
+// }
 
 
 .fc-toolbar {
@@ -436,4 +441,3 @@ $value in $theme-colors {
         margin-left: 0.75em;
     }
 }
-
